@@ -11,7 +11,7 @@
 python <scriptname>.py <arguments>
 ```
 
-**Note**
+**Note:**
 You need to install scapy for the networkScanner.py to work. 
 You can install scapy by typing:
 
