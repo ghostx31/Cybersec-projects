@@ -27,10 +27,10 @@ def arp_scan(ip):                                   # Def to generate ARP reques
 
 def print_res(res):                             # Def to print the output of the devices found 
     print("IP Address\t\t\tMAC Address")
-    print("\n[-------------------------------------------------------------------------------]")
+    print("\n-------------------------------------------------------------------------------")
     for dev in res:
         print(dev["ip"] + "\t\t" + dev["mac"])          # Print from dictionary for ip and mac
-        print("[-------------------------------------------------------------------------------]") 
+        print("-------------------------------------------------------------------------------") 
 
 opts = get_args()
 scan_res = arp_scan(opts.address)
