@@ -20,6 +20,6 @@ You can install scapy by typing:
 pip install scapy
 ```
 
-## Do not use these scripts on anyonee without their prior consent. 
+## Do not use these scripts on anyone without their prior consent. 
 
  
