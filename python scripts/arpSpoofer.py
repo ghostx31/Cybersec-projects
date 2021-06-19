@@ -26,7 +26,8 @@ def arp_scan(ip):                                   # Def to generate ARP reques
     return  (dev_list)
 
 
-def print_res(res):                             # Def to print the output of the devices found 
+def print_res(res):       # Def to print the output of the devices found 
+    print("\n[+] Listing devices on the network")
     print("IP Address\t\t\tMAC Address")
     print("\n-------------------------------------------------------------------------------")
     for dev in res:
@@ -61,7 +62,6 @@ def restore_table(dest_ip, src_ip):             # Def to restore the ARP table a
     sc.send(rst_pkt, count=4, verbose=False)
 
 
-print("\n[+] Printing the devices on the network...")
 opts = get_args()
 scan_res = arp_scan(opts.address)
 print_res(scan_res)
